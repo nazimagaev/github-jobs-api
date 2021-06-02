@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  background: #d19c9c;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  margin: 8.6rem;
+  width: 111rem;
+  max-width: 111rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 3rem;
+}
+
+.jobs-card {
+  width: 35rem;
+  height: 25rem;
+  background: #ffffff;
+  border-radius: 6px;
+
+  padding: 3.2rem;
+}
+
+.jobs-card__photo {
+  border-radius: 15px;
+}
+
+.job-card__published {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #6e8098;
+}
+
+.job-card__shift {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #6e8098;
+}
+
+.job-card__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+
+  color: #19202d;
+}
