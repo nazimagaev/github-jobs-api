@@ -1,0 +1,125 @@
+.navbar {
+  height: 16rem;
+  background: #5964e0;
+  border-radius: 0px 0px 0px 100px;
+
+  &__contents {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4.5rem;
+  }
+
+  &__toggle {
+    display: flex;
+    align-items: center;
+
+    width: 112px;
+    height: 24px;
+
+    input[type="checkbox"] {
+      margin-left: 1.6rem;
+      position: relative;
+      width: 4.8rem;
+      height: 2rem;
+      -webkit-appearance: none;
+      background: #ffffff;
+      border-radius: 12px;
+      outline: none;
+      transition: 0.5s;
+    }
+
+    input:checked[type="checkbox"] {
+      background: #ffffff;
+    }
+    input[type="checkbox"]::before {
+      content: " ";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 20px;
+      top: 3.2px;
+      left: 5px;
+      background: #5964e0;
+      text-align: center;
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+    input:checked[type="checkbox"]::before {
+      left: 27px;
+    }
+  }
+}
+
+.header {
+  margin-top: -5rem;
+  display: flex;
+  justify-content: space-around;
+
+  background: #ffffff;
+  border-radius: 6px;
+
+  &__search {
+    padding: 34px 120px 30px 32px;
+    border-right: 1px solid rgba(110, 128, 152, 0.2);
+    input[type="text"] {
+      margin-left: 1.6rem;
+      width: 27rem;
+      -webkit-appearance: none;
+      border: none;
+      outline: none;
+      ::placeholder {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 16px;
+        color: red;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__location {
+    padding: 28px 110px 28px 23px;
+    margin: 0;
+    border-right: 1px solid rgba(110, 128, 152, 0.2);
+    input[type="text"] {
+        width: 135px;
+      -webkit-appearance: none;
+      border: none;
+      outline: none;
+        // margin-left: 1.6rem;
+    }
+  }
+  &__time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 16px 28px 32px;
+
+    input[type="checkbox"] {
+      width: 2rem;
+      height: 2rem;
+      -webkit-appearance: none;
+      background: rgba(25, 32, 45, 0.1);
+      outline: none;
+    }
+
+    h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 16px;
+      width: 11rem;
+      margin-left: 1.6rem;
+
+      color: #19202d;
+
+      text-align: center;
+    }
+  }
+}
+
+
+
+.dark {
+  background-color: #19202D;
+}

@@ -16,11 +16,11 @@ html {
 
 body {
   font-size: 16px;
-  background: #d19c9c;
+  background: #f2f2f2;
   font-family: "Kumbh Sans", sans-serif;
 }
 
-.container {
+.job-container {
   margin: 8.6rem;
   width: 111rem;
   max-width: 111rem;
@@ -34,14 +34,25 @@ body {
 
 .jobs-card {
   width: 35rem;
-  height: 25rem;
+  /* height: 25rem; */
   background: #ffffff;
   border-radius: 6px;
 
   padding: 3.2rem;
+  margin-bottom: 4rem;
 }
 
 .jobs-card__photo {
+  margin-top: -5.5rem;
+  border: none;
+  margin-bottom: 2.4rem;
+}
+
+.jobs-card__photo img {
+  width: 5rem;
+  height: 5rem;
+  max-width: 100%;
+
   border-radius: 15px;
 }
 
@@ -51,6 +62,7 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: #6e8098;
+  margin-right: 1.2rem;
 }
 
 .job-card__shift {
@@ -66,6 +78,25 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
+  margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
 
   color: #19202d;
+}
+
+.jobs-card__locations {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5964e0;
+}
+
+.jobs-card__description-bottom {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #6e8098;
+  margin-bottom: 2.6rem;
 }
